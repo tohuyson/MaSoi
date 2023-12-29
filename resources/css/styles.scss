@@ -1,0 +1,38 @@
+/* public/css/styles.css */
+
+/* Reset some default styles for consistency */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Style the input container */
+.input-container {
+    margin: 20px;
+}
+
+/* Style the input */
+.styled-input {
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #3498db; /* Border color */
+    border-radius: 5px; /* Rounded corners */
+    outline: none; /* Remove default focus border */
+    transition: border-color 0.3s; /* Smooth transition for border color */
+
+/* Optional: Add some hover effect */
+    &:hover {
+     border-color: #2980b9; /* Border color on hover */
+    }
+
+/* Optional: Add some focus effect */
+    &:focus {
+     border-color: #2980b9; /* Border color on focus */
+     box-shadow: 0 0 5px rgba(52, 152, 219, 0.7); /* Box shadow on focus */
+    }
+}
